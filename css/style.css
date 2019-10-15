@@ -1,0 +1,249 @@
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("font/montserrat/montserrat-regular-webfont.eot");
+  src:
+  url("font/montserrat/montserrat-regular-webfont.woff") format("woff"),
+  url("font/montserrat/montserrat-regular-webfont.woff2") format("woff2"),
+  url("font/montserrat/montserrat-regular-webfont.ttf") format("truetype"),
+  url("font/montserrat/montserrat-regular-webfont.svg#montserrat-regular-webfont") format("svg");
+  }
+
+  @font-face {
+    font-family: "Saira";
+    src: url("font/saira/sairaextracondensed-regular-webfont.eot");
+    src:
+    url("font/saira/sairaextracondensed-regular-webfont.woff") format("woff"),
+    url("font/saira/sairaextracondensed-regular-webfont.woff2") format("woff2"),
+    url("font/saira/sairaextracondensed-regular-webfont.ttf") format("truetype"),
+    url("font/saira/sairaextracondensed-regular-webfont.svg#sairaextracondensed-regular-webfont") format("svg");
+    }
+
+.sidenav {
+    height: 100%;
+    width: 17rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #039be5;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  
+  .main {
+    padding: 0;
+  }
+
+  .img-border {
+    border:.5rem solid rgba(255,255,255,.2);
+    border-top-color: rgba(255, 255, 255, 0.2);
+    border-top-style: solid;
+    border-top-width: 0.5rem;
+    border-right-color: rgba(255, 255, 255, 0.2);
+    border-right-style: solid;
+    border-right-width: 0.5rem;
+    border-bottom-color: rgba(255, 255, 255, 0.2);
+    border-bottom-style: solid;
+    border-bottom-width: 0.5rem;
+    border-left-color: rgba(255, 255, 255, 0.2);
+    border-left-style: solid;
+    border-left-width: 0.5rem;
+    border-image-outset: 0;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+}
+  
+.all-center {
+    position: relative;
+    top: 20vh;
+  }
+
+.photo-wrapper {
+  background-color: #039be5;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  display: table
+}
+
+.photo-center {
+  background-color: #039be5;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+.menu-navigation-link a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #63ccff !important;
+}
+
+.menu-navigation-link a:hover {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white !important;
+}
+
+@media (max-width: 992px) {
+    .menu-navigation * {
+        display: none;
+    }
+
+    .sidenav {
+        display: none;
+    }
+
+    .main {
+        margin-left: 0;
+      }
+}
+
+@media (min-width: 992px) {
+    .photo-wrapper {
+        display: none;
+      }
+
+    body {
+      padding-top:0;
+      padding-left:17rem
+     }
+     .navbar-wrapper * {
+      display: none;
+    } 
+}
+
+
+.navbar-wrapper {
+    position: relative;
+    width: 100%;
+    background-color: #039be5;
+}
+
+.custom-card {
+    margin: 20px;
+}
+
+section.resume-section {
+    padding-top:5rem!important;
+    padding-bottom:5rem!important;
+    max-width:75rem;
+    min-height: 100vh;
+}
+
+  .menu {   
+    background: #039be5;
+    padding: 0;
+    position: relative;
+}
+
+/*!
+ * Start Bootstrap - Resume v5.0.8 (https://startbootstrap.com/template-overviews/resume)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ */
+ body {
+  font-family:'Montserrat','Segoe UI', Roboto, 'Helvetica Neue', monospace;
+  color:#868e96
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+  font-family:'Montserrat','Segoe UI', Roboto, 'Helvetica Neue', monospace;;
+  font-weight:700;
+  text-transform:uppercase;
+  color:#343a40
+ }
+ h1 {
+  font-family:'Saira','Segoe UI', Roboto, 'Helvetica Neue', monospace;;
+  font-size:6rem;
+  line-height:5.5rem
+ }
+ h2 {
+  font-size:3.5rem
+ }
+ h3 {
+  font-size:2rem
+ }
+ p.lead {
+  font-size:1.15rem;
+  font-weight:400
+ }
+ .subheading {
+  text-transform:uppercase;
+  font-weight:500;
+  font-family:'Saira','Segoe UI', Roboto, 'Helvetica Neue', monospace;;
+  font-size:1.5rem
+ }
+ .social-icons a {
+  display:inline-block;
+  height:3.5rem;
+  width:3.5rem;
+  background-color:#495057;
+  color:#fff!important;
+  border-radius:100%;
+  text-align:center;
+  font-size:1.5rem;
+  line-height:3.5rem;
+  margin-right:1rem
+ }
+ .social-icons a:last-child {
+  margin-right:0
+ }
+ .social-icons a:hover {
+  background-color:#039be5
+ }
+ .dev-icons {
+  font-size:3rem
+ }
+ .dev-icons .list-inline-item i:hover {
+  color:#039be5
+ }
+ 
+ section.resume-section {
+  padding-top:5rem!important;
+  padding-bottom:5rem!important;
+  max-width:75rem
+ }
+ section.resume-section .resume-item .resume-date {
+  min-width:none
+ }
+ @media (min-width:992px) {
+  section.resume-section {
+   min-height:100vh
+  }
+  section.resume-section .resume-item .resume-date {
+   min-width:18rem
+  }
+ }
+ @media (min-width:992px) {
+  section.resume-section {
+   padding-top:3rem!important;
+   padding-bottom:3rem!important
+  }
+ }
+ .bg-primary {
+  background-color:#039be5!important
+ }
+ .text-primary {
+  color:#039be5!important
+ }
+ a {
+  color:#039be5
+ }
+ a:active,
+ a:focus,
+ a:hover {
+  color:#005b88
+ }
+ 
