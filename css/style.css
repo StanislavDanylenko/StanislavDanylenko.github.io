@@ -74,7 +74,7 @@
     color: white !important;
 }
 
-@media only screen and (max-device-width: 991px) {
+@media only screen and (max-width: 991px) {
     .menu-navigation * {
         display: none;
     }
@@ -88,7 +88,7 @@
     }
 }
 
-@media only screen and (min-device-width: 992px) {
+@media only screen and (min-width: 992px) {
     .photo-wrapper {
         display: none;
     }
@@ -116,7 +116,7 @@
     }
 }
 
-@media only screen and (max-device-width: 400px) {
+@media only screen and (max-width: 400px) {
     h1 {
         font-size: 5rem;
         line-height: 4.5rem
@@ -131,7 +131,7 @@
     }
 }
 
-@media only screen and (min-device-width: 401px) {
+@media only screen and (min-width: 401px) {
     h1 {
         font-size: 5.5rem;
         line-height: 5rem
@@ -147,7 +147,7 @@
 
 }
 
-@media only screen and (min-device-width: 801px) {
+@media only screen and (min-width: 801px) {
     h1 {
         font-size: 6rem;
         line-height: 5.5rem
@@ -279,4 +279,44 @@ a:focus,
 a:hover {
     color: #005b88
 }
- 
+
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 19px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+}
