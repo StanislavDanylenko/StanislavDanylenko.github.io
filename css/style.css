@@ -74,7 +74,7 @@
     color: white !important;
 }
 
-@media (max-device-width: 991px) {
+@media only screen and (max-device-width: 991px) {
     .menu-navigation * {
         display: none;
     }
@@ -88,7 +88,7 @@
     }
 }
 
-@media (min-device-width: 992px) {
+@media only screen and (min-device-width: 992px) {
     .photo-wrapper {
         display: none;
     }
@@ -116,7 +116,7 @@
     }
 }
 
-@media (max-device-width: 400px) {
+@media only screen and (max-device-width: 400px) {
     h1 {
         font-size: 5rem;
         line-height: 4.5rem
@@ -131,7 +131,7 @@
     }
 }
 
-@media (min-device-width: 401px) {
+@media only screen and (min-device-width: 401px) {
     h1 {
         font-size: 5.5rem;
         line-height: 5rem
@@ -147,7 +147,7 @@
 
 }
 
-@media (min-device-width: 801px) {
+@media only screen and (min-device-width: 801px) {
     h1 {
         font-size: 6rem;
         line-height: 5.5rem
