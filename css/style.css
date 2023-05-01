@@ -47,7 +47,7 @@
 }
 
 .photo-wrapper {
-    background-color: #039be5;
+    max-width: 15rem;
     margin: 0;
     padding: 0;
     width: 100%;
