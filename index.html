@@ -1,413 +1,644 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="en">
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Stanislav Danylenko</title>
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" rel="stylesheet">
 </head>
+<body class="bg-light">
 
-<body>
+<a href="#section-summary" id="up-button" class="rounded-circle text-center" title="Go to top"><em
+        class="bi bi-arrow-up-short"></em></a>
 
-<!-- Return to Top -->
-<a href="javascript:" id="return-to-top"><i class="fa fa-angle-up"></i></a>
-
-<div class="sidenav menu-navigation">
-    <div class="all-center">
-        <div class="p-3">
+<div class="mobile menu">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light vw-100 fixed-top">
+        <div class="container">
             <img src="files/avatar.jpg"
-                 class="rounded-circle mx-auto d-block img-fluid img-border photo-center"
+                 class="rounded-circle img-fluid img-border avatar p-1" style="width: 50px; height: 50px"
                  alt="Stanislav's avatar">
+            <a href="#" class="navbar-brand">S. Danylenko</a>
+            <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#section-summary">summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-languages">languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-education">education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-interests">interests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-other-activities">other activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-main-skills">main skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-secondary-skills">secondary skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-work-experience">work experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-android">android</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="menu-navigation text-center menu-navigation-link">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger active" href="#about">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-                </li>
-            </ul>
-        </div>
-    </div>
+    </nav>
 </div>
-
-<div class="main">
-    <div>
-        <div class="navbar-wrapper text-center menu-navigation-link">
-            <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-
-                <!-- Toggler/collapsibe Button -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"
-                        style="margin: 0 auto">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Navbar links -->
-                <div class="collapse navbar-collapse " id="collapsibleNavbar">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger active" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#experience">Experience</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#education">Education</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#awards">Awards</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-    </div>
-
-    <div>
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
-            <div class="w-100">
-                <div class="photo-wrapper">
+<div class="container-fluid min-vh-100 d-flex flex-column">
+    <div class="row">
+        <div class="vh-100 col-sm-0 col-md-3 col-xl-2 text-center d-flex justify-content-center align-items-center menu position-fixed pc">
+            <div>
+                <div class="m-2">
                     <img src="files/avatar.jpg"
-                         class="rounded-circle mx-auto d-block img-fluid img-border photo-center"
+                         class="rounded-circle mx-auto d-block img-fluid img-border photo-center avatar p-1"
                          alt="Stanislav's avatar">
                 </div>
-                <h1 class="mb-0">Stanislav
-                    <span class="text-primary">Danylenko</span>
-                </h1>
-                <div class="subheading mb-5">3542 Berry Street · Cheyenne Wells, CO 80810 · (317) 585-8468 ·
-                    <a href="mailto:name@email.com">name@email.com</a>
-                </div>
-                <p class="lead mb-5">I am experienced in leveraging agile frameworks to provide a robust synopsis for
-                    high
-                    level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further
-                    the
-                    overall value proposition.</p>
-                <div class="social-icons">
-                    <a href="#">
-                        <i class="fa fa-linkedin"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-github"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-twitter"></i>
-                    </a>
-                    <a href="#">
-                        <i class="fa fa-facebook"></i>
-                    </a>
-                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#section-summary">summary</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-languages">languages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-education">education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-interests">interests</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-other-activities">other activities</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-main-skills">main skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-secondary-skills">secondary skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-work-experience">work experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#section-android">android</a>
+                    </li>
+                </ul>
             </div>
-        </section>
-
-        <hr class="m-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
-            <div class="w-100">
-                <h2 class="mb-5">Experience</h2>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Senior Web Developer</h3>
-                        <div class="subheading mb-3">Intelitec Solutions</div>
-                        <p>Bring to the table win-win survival strategies to ensure proactive domination. At the end of
-                            the day,
-                            going forward, a new normal that has evolved from generation X is on the runway heading
-                            towards a
-                            streamlined cloud solution. User generated content in real-time will have multiple
-                            touchpoints for
-                            offshoring.</p>
+        </div>
+        <div class="vh-100 col-sm-12 col-md-9 col-xl-10 mt-2 offset-xl-2 offset-md-3">
+            <div class="card m-2 mt-5 mt-md-0" id="section-summary">
+                <div class="card-body p-5">
+                    <h1 class="mb-0 text-uppercase">Stanislav <span class="text-primary">Danylenko</span>
+                    </h1>
+                    <div class="h2 mb-3">Senior Java Developer</div>
+                    <div class="h6 mb-5">
+                        <em class="bi bi-calendar-check"></em> 17.05.1999 |
+                        <em class="bi bi-geo-alt"></em> Ukraine |
+                        <a href="https://www.linkedin.com/in/stanislav-danylenko/"><em class="bi bi-linkedin"></em> |
+                        </a>
+                        <a href="mailto:name@email.com"><em class="bi bi-envelope"></em> | </a>
+                        <a href="https://github.com/StanislavDanylenko"><em class="bi bi-github"></em> | </a>
+                        <a href="https://play.google.com/store/apps/developer?id=Stanislav+Danylenko"><em
+                                class="bi bi-google-play"></em> </a>
                     </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">March 2013 - Present</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Web Developer</h3>
-                        <div class="subheading mb-3">Intelitec Solutions</div>
-                        <p>Capitalize on low hanging fruit to identify a ballpark value added activity to beta test.
-                            Override the
-                            digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the
-                            information
-                            highway will close the loop on focusing solely on the bottom line.</p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">December 2011 - March 2013</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Junior Web Designer</h3>
-                        <div class="subheading mb-3">Shout! Media Productions</div>
-                        <p>Podcasting operational change management inside of workflows to establish a framework. Taking
-                            seamless
-                            key performance indicators offline to maximise the long tail. Keeping your eye on the ball
-                            while
-                            performing a deep dive on the start-up mentality to derive convergence on cross-platform
-                            integration.
+                    <p class="lead">I am ready to learn new technologies and improve my skills in software
+                        development and take part in writing interesting projects with up-to-
+                        date modern technologies and approaches in different domains. I love
+                        code with high test coverage level, flexible hours and Agile.</p>
+                    <p class="text-center">
+                        <a data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false"
+                           aria-controls="collapseExample">
+                            ↑ read more ↓
+                        </a>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <p class="lead">
+                            I am a senior software engineer and Java mentor with 5 years experience in developing
+                            enterprise
+                            applications. I like to learn new technologies and deepen my knowledge in those areas in
+                            which
+                            I am an expert, take a part in writing interesting projects with up-to-date modern
+                            technologies
+                            and approaches. I love code with high test coverage level, flexible hours and Agile.
+                        </p>
+                        <p class="lead">
+                            Worked on more than 5 small and large projects in different domains. In various teams from
+                            3 to 60 people (in total) and with partners from all over the world, for example,
+                            Australia, USA, Israel, Italy, etc. Worked as a full-stack developer and as a backend
+                            developer.
+                            Various methodologies were used in the work: Scrum, Kanban. Worked with various databases,
+                            technology stacks.
+                        </p>
+                        <p class="lead">
+                            As a PhD student I am doing research in BigData image processing.
                         </p>
                     </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">July 2010 - December 2011</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-xl-6">
+                    <div class="card p-3 m-sm-2 me-xl-0 card-height" id="section-languages">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center mb-3">LANGUAGES</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>English</strong> - Upper-Intermediate</li>
+                                <li class="list-group-item"><strong>Ukrainian</strong> - Native</li>
+                                <li class="list-group-item"><strong>Russian</strong> - Native</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-                    <div class="resume-content">
-                        <h3 class="mb-0">Web Design Intern</h3>
-                        <div class="subheading mb-3">Shout! Media Productions</div>
-                        <p>Collaboratively administrate empowered markets via plug-and-play networks. Dynamically
-                            procrastinate
-                            B2C users after installed base benefits. Dramatically visualize customer directed
-                            convergence without
-                            revolutionary ROI.</p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">September 2008 - June 2010</span>
-                    </div>
-                </div>
-
-            </div>
-
-        </section>
-
-        <hr class="m-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
-            <div class="w-100">
-                <h2 class="mb-5">Education</h2>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
-                    <div class="resume-content">
-                        <h3 class="mb-0">University of Colorado Boulder</h3>
-                        <div class="subheading mb-3">Bachelor of Science</div>
-                        <div>Computer Science - Web Development Track</div>
-                        <p>GPA: 3.23</p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2006 - May 2010</span>
+                <div class="col-sm-12 col-xl-6">
+                    <div class="card p-3 m-sm-2 ms-xl-0 card-height" id="section-education">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center mb-3">EDUCATION</h5>
+                            <p class="card-text ms-2"><a href="https://nure.ua/en/"><strong>KHARKIV NATIONAL UNIVERSITY
+                                OF RADIO ELECTRONICS</strong></a></p>
+                            <p class="card-text ms-2"><strong>“Software Engineering”</strong></p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Bachelor · (2016-2020)</li>
+                                <li class="list-group-item">Master · (2020-2022)</li>
+                                <li class="list-group-item">PhD · (2022-now)</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
-                    <div class="resume-content">
-                        <h3 class="mb-0">James Buchanan High School</h3>
-                        <div class="subheading mb-3">Technology Magnet Program</div>
-                        <p>GPA: 3.56</p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2002 - May 2006</span>
+                <div class="col-sm-12 col-xl-6">
+                    <div class="card p-3 m-sm-2 me-xl-0 card-height" id="section-interests">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center mb-3">INTERESTS</h5>
+                            <div class="row">
+                                <div class="col">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">languages</li>
+                                        <li class="list-group-item">technologies</li>
+                                        <li class="list-group-item">travelling</li>
+                                    </ul>
+                                </div>
+                                <div class="col">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">music</li>
+                                        <li class="list-group-item">sport</li>
+                                        <li class="list-group-item">cars</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-
+                <div class="col-sm-12 col-xl-6">
+                    <div class="card p-3 m-sm-2 ms-xl-0 card-height" id="section-other-activities">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center mb-3">OTHER ACTIVITIES</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Java mentor</strong></li>
+                                <li class="list-group-item"><strong>Articles author:</strong>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><a
+                                                href="https://tech-stack.com/blog/using-graalvm-in-a-real-world-scenario-techstacks-experience/">
+                                            - GraalVM experience</a></li>
+                                        <li class="list-group-item">- University articles:
+                                            <a href="http://www.ithea.org/softengine/2022_SE_Proceedings.pdf#page=92">link
+                                                1,</a>
+                                            <a href="http://ceur-ws.org/Vol-3171/paper111.pdf">link 2
+                                            </a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xl-6">
+                    <div class="card p-3 m-sm-2 me-xl-0 card-height" id="section-main-skills">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center mb-3">MAIN SKILLS</h5>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Java:</strong> 8, 11, 17</li>
+                                <li class="list-group-item"><strong>Build Tools:</strong> Maven, Gradle</li>
+                                <li class="list-group-item"><strong>DB:</strong> MySQL, PostgreSQL</li>
+                                <li class="list-group-item"><strong>Java-DB:</strong> JDBC, Hibernate, Flyway</li>
+                                <li class="list-group-item"><strong>Testing:</strong> JUnit 4, 5, Mockito, Powermock,
+                                    Testcontainers
+                                </li>
+                                <li class="list-group-item"><strong>Testing levels:</strong> unit, integration, contract
+                                </li>
+                                <li class="list-group-item"><strong>Spring:</strong> Boot, Web, Data, JPA, Security,
+                                    Cloud
+                                </li>
+                                <li class="list-group-item"><strong>AWS:</strong> SNS, SQS, S3, Elastic Transcoder</li>
+                                <li class="list-group-item"><strong>Containers:</strong> Docker, K8S</li>
+                                <li class="list-group-item"><strong>Git:</strong> GitHub, GitLab, BitBucket</li>
+                                <li class="list-group-item"><strong>Methodology:</strong> Scrum, Kanban</li>
+                                <li class="list-group-item"><strong>OS:</strong> Linux, Windows</li>
+                                <li class="list-group-item"><strong>Architectures:</strong> monolith, micro services
+                                </li>
+                                <li class="list-group-item"><strong>Other:</strong> Jira, IntelliJ IDEA, Swagger</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xl-6">
+                    <div class="card p-3 m-sm-2 ms-xl-0 card-height" id="section-secondary-skills">
+                        <div class="card-body ">
+                            <h5 class="card-title text-center mb-3">SECONDARY SKILLS</h5>
+                            <p class="ms-2"><strong>Used, but not configured, because it was made by OPS</strong></p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">ELK stack</li>
+                                <li class="list-group-item">Jenkins</li>
+                                <li class="list-group-item">full K8S cluster configuration</li>
+                                <li class="list-group-item">AWS cloud configuration</li>
+                            </ul>
+                            <br/>
+                            <p class="ms-2"><strong>Have experience with</strong></p>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item"><strong>Front-end:</strong> JavaScript, TypeScript, jQuery,
+                                    React, Redux, Angular, Node.js, Dojo Toolkit, Handlebars, Bootstrap 4, AlloyUI
+                                </li>
+                                <li class="list-group-item"><strong>Java:</strong> JSP, FreeMarker, Liferay, OSGI,
+                                    PortletAPI, GraalVM
+                                </li>
+                                <li class="list-group-item"><strong>Auto-testing:</strong> Selenium, Selenide</li>
+                                <li class="list-group-item"><strong>Other:</strong> Android, Arduino, C#</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 mt-2 mt-xl-0">
+                    <div class="card mx-2 p-3" id="section-work-experience">
+                        <div class="card-body">
+                            <h5 class="card-title text-center mb-3">WORK EXPERIENCE</h5>
+                            <h5 class="card-title">COMPANIES</h5>
+                            <div class="card ">
+                                <div class="card-body">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>NDA</strong> · (September 2018 - September
+                                            2021) (3 years)
+                                        </li>
+                                        <li class="list-group-item"><strong><a href="https://tech-stack.com/">
+                                            TechStack </a></strong> · (September 2021 - now) (<span id="work-period">1 year 9 month</span>)
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <h5 class="card-title">PROJECTS</h5>
+                            <hr>
+                            <div class="row tabl bg-light">
+                                <div class="col-sm-12"><h5>6. Sales system</h5></div>
+                                <div class="col-sm-12 col-xl-4">
+                                    <ul class="list-group list-group-flush bg-light">
+                                        <li class="list-group-item bg-light"><strong>Company:</strong> TechStack</li>
+                                        <li class="list-group-item bg-light"><strong>Start:</strong> Sep 2021</li>
+                                        <li class="list-group-item bg-light"><strong>Role:</strong> Middle+/Senior Java
+                                            Developer
+                                        </li>
+                                        <li class="list-group-item bg-light"><strong>Team Size:</strong> 10 (total 50+)
+                                        </li>
+                                        <li class="list-group-item bg-light"><strong>Domain:</strong> sales, video
+                                            conferencing
+                                        </li>
+                                        <li class="list-group-item bg-light p-0 m-0"></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-xl-8">
+                                    <ul class="list-group list-group-flush bg-light">
+                                        <li class="list-group-item bg-light"><strong>Description:</strong> Large
+                                            microservices system for performing all sales activities
+                                        </li>
+                                        <li class="list-group-item bg-light"><strong>Technologies:</strong> Java 8, 11,
+                                            17, GraalVM, MySQL, Postgre SQL, Flyway, Redis , Maven,
+                                            Gradle, Spring MVC, Spring (Boot, Web, Cloud, Data, JPA, Actuator,
+                                            Native), AWS (SNS, SQS, S3, Elastic Transcoder, Secrets Manager, EKS),
+                                            JUnit 4, 5, Mockito, Testcontainers, Pact, JaCoCo, localstack, Spock
+                                            Framework, Jenkins, Sonar, Vault
+                                        </li>
+                                        <li class="list-group-item bg-light"><strong>Responsibilities:</strong>
+                                            <ul class="list-group list-group-flush bg-light">
+                                                <li class="list-group-item bg-light">Team 1 (common platform support)
+                                                    <ul>
+                                                        <li>maintenance of the platform stability</li>
+                                                        <li>error handling, logs efficiency, alarm notifications</li>
+                                                        <li>critical bugs troubleshooting</li>
+                                                        <li>SQL performance review and improvement</li>
+                                                        <li>re-writing service to native GraalVM build, use Java K8S
+                                                            SDK, K8S Jobs
+                                                        </li>
+                                                        <li>work with ffmpeg (video converting, screen capture)</li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-group-item bg-light">Team 2 (OpenID integration)
+                                                    <ul>
+                                                        <li>implementing OpenID integration</li>
+                                                        <li>Spring Security configuration</li>
+                                                        <li>writing Spring Boot starters</li>
+                                                        <li>configuring static code analyzing tools</li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-group-item bg-light">Team 3 (classic BE-FE team)
+                                                    <ul>
+                                                        <li>design and code implementation related to DB and all classic
+                                                            layers
+                                                        </li>
+                                                        <li>emails sending</li>
+                                                        <li>ICS file generation</li>
+                                                    </ul>
+                                                </li>
+                                                <li class="list-group-item bg-light">All teams: writing tests: unit,
+                                                    integration, contract
+                                                </li>
+                                                <li class="list-group-item bg-light">Extra activities: Java Trainee
+                                                    Mentor
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row tabl">
+                                <div class="col-sm-12 "><h5>5. Logistic system</h5></div>
+                                <div class="col-sm-12 col-xl-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Company:</strong> NDA</li>
+                                        <li class="list-group-item"><strong>Start:</strong> Sep 2020</li>
+                                        <li class="list-group-item"><strong>End:</strong> Aug 2021</li>
+                                        <li class="list-group-item"><strong>Role:</strong> Middle Full Stack Developer
+                                        </li>
+                                        <li class="list-group-item"><strong>Team Size:</strong> 5 (total 20+)</li>
+                                        <li class="list-group-item"><strong>Domain:</strong> logistic</li>
+                                        <li class="list-group-item p-0 m-0"></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-xl-8">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Description:</strong> System for optimizing
+                                            a service supply chain
+                                        </li>
+                                        <li class="list-group-item"><strong>Technologies:</strong>
+                                            Java 8, Spring, Spring Boot, Postgre SQL, Hibernate, JUnit 4, Mockito,
+                                            EasyMock, JaCoCo, Dojo Toolkit, FreeMarker, Docker, TypeScript, React,
+                                            Gradle, Jenkins, Sonar
+                                        </li>
+                                        <li class="list-group-item"><strong>Responsibilities:</strong>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">refactoring and optimizing existing code
+                                                    base
+                                                </li>
+                                                <li class="list-group-item">increase test coverage</li>
+                                                <li class="list-group-item">fix bugs at legacy Dojo UI</li>
+                                                <li class="list-group-item">DB query optimization</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row tabl bg-light">
+                                <div class="col-sm-12 "><h5>4. Parking system</h5></div>
+                                <div class="col-sm-12 col-xl-4">
+                                    <ul class="list-group list-group-flush bg-light">
+                                        <li class="list-group-item bg-light"><strong>Company:</strong> NDA</li>
+                                        <li class="list-group-item bg-light"><strong>Start:</strong> June 2020</li>
+                                        <li class="list-group-item bg-light"><strong>End:</strong> Aug 2020</li>
+                                        <li class="list-group-item bg-light"><strong>Role:</strong> Middle Full Stack
+                                            Developer
+                                        </li>
+                                        <li class="list-group-item bg-light"><strong>Team Size:</strong> 3</li>
+                                        <li class="list-group-item bg-light"><strong>Domain:</strong> accounting</li>
+                                        <li class="list-group-item bg-light p-0 m-0"></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-xl-8">
+                                    <ul class="list-group list-group-flush bg-light">
+                                        <li class="list-group-item bg-light"><strong>Description:</strong> Small util
+                                            application for booking a parking place
+                                        </li>
+                                        <li class="list-group-item bg-light"><strong>Technologies:</strong>
+                                            Java 11, Spring (Boot, Btach, Data, Integration), Postgre SQL, Flyway,
+                                            Angular, TypeScript, Docker, Gradle
+                                        </li>
+                                        <li class="list-group-item bg-light"><strong>Responsibilities:</strong>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item bg-light">configure Spring Boot application
+                                                    from the scratch
+                                                </li>
+                                                <li class="list-group-item bg-light">develop functionality related to
+                                                    Spring Bath and Integration
+                                                </li>
+                                                <li class="list-group-item bg-light">write docker and docker-compose
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row tabl">
+                                <div class="col-sm-12 "><h5>3. Request system</h5></div>
+                                <div class="col-sm-12 col-xl-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Company:</strong> NDA</li>
+                                        <li class="list-group-item"><strong>Start:</strong> Sep 2019</li>
+                                        <li class="list-group-item"><strong>End:</strong> May 2020</li>
+                                        <li class="list-group-item"><strong>Role:</strong> Junior Full Stack Developer
+                                        </li>
+                                        <li class="list-group-item"><strong>Team Size:</strong> 5-10</li>
+                                        <li class="list-group-item"><strong>Domain:</strong> government</li>
+                                        <li class="list-group-item p-0 m-0"></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-xl-8">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Description:</strong> System where users can
+                                            fill large forms with request to government, then government can review
+                                            requests and add their solution
+                                        </li>
+                                        <li class="list-group-item"><strong>Technologies:</strong>
+                                            Java 8, Liferay 7.1, MySQL, jQuery, AlloyUI, Bootstrap 4, Swagger, Gradle
+                                        </li>
+                                        <li class="list-group-item"><strong>Responsibilities:</strong>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">design and develop DB scheme</li>
+                                                <li class="list-group-item">develop all back-end layers, write tests,
+                                                    configure security and validation
+                                                </li>
+                                                <li class="list-group-item">design and develop front-end dynamic form
+                                                    building framework
+                                                </li>
+                                                <li class="list-group-item">develop BE-FE interaction</li>
+                                                <li class="list-group-item">write Swagger Open API</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row tabl bg-light">
+                                <div class="col-sm-12 "><h5>2. Portal Initializer</h5></div>
+                                <div class="col-sm-12 col-xl-4">
+                                    <ul class="list-group list-group-flush bg-light">
+                                        <li class="list-group-item bg-light"><strong>Company:</strong> NDA</li>
+                                        <li class="list-group-item bg-light"><strong>Start:</strong> May 2019</li>
+                                        <li class="list-group-item bg-light"><strong>End:</strong> Aug 2019</li>
+                                        <li class="list-group-item bg-light"><strong>Role:</strong> Junior Full Stack
+                                            Developer
+                                        </li>
+                                        <li class="list-group-item bg-light"><strong>Team Size:</strong> 3-5</li>
+                                        <li class="list-group-item bg-light"><strong>Domain:</strong> dev tool</li>
+                                        <li class="list-group-item bg-light p-0 m-0"></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-xl-8">
+                                    <ul class="list-group list-group-flush bg-light">
+                                        <li class="list-group-item bg-light"><strong>Description:</strong> Liferay
+                                            project structure generator from xml file
+                                        </li>
+                                        <li class="list-group-item bg-light"><strong>Technologies:</strong>
+                                            Java 8, Liferay 7.2, MySQL, JAXB, Selenium, Selenide, GitLab CI, Gradle
+                                        </li>
+                                        <li class="list-group-item bg-light"><strong>Responsibilities:</strong>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item bg-light">write XSD and XML, define all
+                                                    tags
+                                                </li>
+                                                <li class="list-group-item bg-light">develop logic of parsing XML</li>
+                                                <li class="list-group-item bg-light">develop logic of configuration
+                                                    Liferay portal based on infp from XML: creating users, roles,
+                                                    content, pages, privileges…
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row tabl">
+                                <div class="col-sm-12 "><h5>1. Several small projects from different domains</h5></div>
+                                <div class="col-sm-12 col-xl-4">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Company:</strong> NDA</li>
+                                        <li class="list-group-item"><strong>Start:</strong> Sep 2018</li>
+                                        <li class="list-group-item"><strong>End:</strong> May 2019</li>
+                                        <li class="list-group-item"><strong>Role:</strong> Junior Full Stack Developer
+                                        </li>
+                                        <li class="list-group-item"><strong>Team Size:</strong> 3-5</li>
+                                        <li class="list-group-item"><strong>Domain:</strong> medicine, marketing,
+                                            commerce
+                                        </li>
+                                        <li class="list-group-item p-0 m-0"></li>
+                                    </ul>
+                                </div>
+                                <div class="col-sm-12 col-xl-8">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item"><strong>Description:</strong> Migration of Liferay
+                                            versions at small projects
+                                        </li>
+                                        <li class="list-group-item"><strong>Technologies:</strong>
+                                            Java 8, Liferay 6.2, 7.0, 7.1, 7.2, Spring, JSP, FreeMarker, Maven, MySQL,
+                                            jQuery, AlloyUI, Bootstrap 4
+                                        </li>
+                                        <li class="list-group-item"><strong>Responsibilities:</strong>
+                                            <ul class="list-group list-group-flush">
+                                                <li class="list-group-item">migration Liferay version from 6 to 7</li>
+                                                <li class="list-group-item">rewrite Spring to Java EE</li>
+                                                <li class="list-group-item">DB schema updating and migration</li>
+                                                <li class="list-group-item">writing new functionality at all layers: db,
+                                                    repository, service, controller, front-end
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 mt-4">
+                    <div class="card mx-2 p-3" id="section-android">
+                        <h5 class="card-title text-center mb-3">ANDROID APPLICATIONS</h5>
+                        <div class="d-flex flex-wrap justify-content-center">
+                            <div class="card m-2" style="width: 18rem;">
+                                <img src="files/logo1.png" class="card-img-top" alt="...">
+                                <div class="card-body android-card">
+                                    <h5 class="card-title">noteefication</h5>
+                                    <p class="card-text">
+                                        noteefication allows you to store notes as regular Android notifications.
+                                        This is convenient because they are in front of your eyes all day and it's
+                                        highly unlikely to forget about them. A lot of notes and plenty of text
+                                        is not a problem for this application, rest assured.</p>
+                                    <a href="https://play.google.com/store/apps/details?id=danylenko.stanislav.noteefication"
+                                       class="btn btn-primary">read more</a>
+                                </div>
+                            </div>
+                            <div class="card m-2" style="width: 18rem;">
+                                <img src="files/logo2.png" class="card-img-top" alt="...">
+                                <div class="card-body android-card">
+                                    <h5 class="card-title">taken</h5>
+                                    <p class="card-text">
+                                        This application allows you to detect that someone has taken your smartphone
+                                        and notify you by means of notifications sent to your wearable gadgets.
+                                        It is achieving by tracking the change in the position of your smartphone in
+                                        space.
+                                    </p>
+                                    <a href="https://play.google.com/store/apps/details?id=stanislav.danylenko.taken"
+                                       class="btn btn-primary">read more</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </section>
 
-        <hr class="m-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="skills">
-            <div class="w-100">
-                <h2 class="mb-5">Skills</h2>
-
-                <div class="subheading mb-3">Programming Languages &amp; Tools</div>
-                <ul class="list-inline dev-icons">
-                    <li class="list-inline-item">
-                        <i class="fa fa-html5"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="fa fa-css3-alt"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="fa fa-js-square"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="fa fa-angular"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="fa fa-react"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="fa fa-node-js"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="fa fa-sass"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="fa fa-less"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="fa fa-wordpress"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="fa fa-gulp"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="fa fa-grunt"></i>
-                    </li>
-                    <li class="list-inline-item">
-                        <i class="fa fa-npm"></i>
-                    </li>
-                </ul>
-
-                <div class="subheading mb-3">Workflow</div>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Mobile-First, Responsive Design
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Cross Browser Testing &amp; Debugging
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Cross Functional Teams
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-check"></i>
-                        Agile Development &amp; Scrum
-                    </li>
-                </ul>
-            </div>
-        </section>
-
-        <hr class="m-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="interests">
-            <div class="w-100">
-                <h2 class="mb-5">Interests</h2>
-                <p>Apart from being a web developer, I enjoy most of my time being outdoors. In the winter, I am an avid
-                    skier
-                    and novice ice climber. During the warmer months here in Colorado, I enjoy mountain biking, free
-                    climbing,
-                    and kayaking.</p>
-                <p class="mb-0">When forced indoors, I follow a number of sci-fi and fantasy genre movies and television
-                    shows, I am an aspiring chef, and I spend a large amount of my free time exploring the latest
-                    technology
-                    advancements in the front-end web development world.</p>
-            </div>
-        </section>
-
-        <hr class="m-0">
-
-        <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="awards">
-            <div class="w-100">
-                <h2 class="mb-5">Awards &amp; Certifications</h2>
-                <ul class="fa-ul mb-0">
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        Google Analytics Certified Developer
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        Mobile Web Specialist - Google Certification
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2009
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup>
-                        Place - University of Colorado Boulder - Adobe Creative Jam 2008 (UI Design Category)
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        2<sup>nd</sup>
-                        Place - University of Colorado Boulder - Emerging Tech Competition 2008
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        1<sup>st</sup>
-                        Place - James Buchanan High School - Hackathon 2006
-                    </li>
-                    <li>
-                        <i class="fa-li fa fa-trophy text-warning"></i>
-                        3<sup>rd</sup>
-                        Place - James Buchanan High School - Hackathon 2005
-                    </li>
-                </ul>
-            </div>
+        </div>
     </div>
 </div>
-
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+<script src="js/vendor/bootstrap.bundle.min.js"></script>
 <script>
+    let upButton = document.getElementById("up-button");
 
-    /*$(document).ready(function() {
-        alert("alee");
-    });
-    //Get the button:
-    mybutton = document.getElementById("return-to-top");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
+    window.onscroll = function () {
+        scrollFunction()
+    };
 
     function scrollFunction() {
         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            mybutton.style.display = "block";
+            upButton.style.display = "block";
         } else {
-            mybutton.style.display = "none";
+            upButton.style.display = "none";
         }
     }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        document.body.scrollTop = 0; // For Safari
-        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }*/
-    // ===== Scroll to Top ====
-    $(window).scroll(function() {
-        if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-            $('#return-to-top').fadeIn(200);    // Fade in the arrow
-        } else {
-            $('#return-to-top').fadeOut(200);   // Else fade out the arrow
-        }
-    });
-    $('#return-to-top').click(function() {      // When arrow is clicked
-        $('body,html').animate({
-            scrollTop : 0                       // Scroll to top of body
-        }, 500);
-    });
+    function dateDif(d1, d2) {
+        let months;
+        months = (d2.getFullYear() - d1.getFullYear()) * 12;
+        months -= d1.getMonth();
+        months += d2.getMonth();
+        let years = parseInt((months / 12), 10);
+        months = months - years * 12;
+        return `${years} years ${months} months`
+    }
+
+    let workPeriod = document.getElementById("work-period");
+    workPeriod.innerHTML = dateDif(new Date(2021, 8, 1), new Date())
+
 </script>
-
 </body>
-
 </html>

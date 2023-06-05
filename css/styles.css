@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url("font/montserrat/montserrat-regular-webfont.eot");
+    src: url("font/montserrat/montserrat-regular-webfont.woff") format("woff"),
+    url("font/montserrat/montserrat-regular-webfont.woff2") format("woff2"),
+    url("font/montserrat/montserrat-regular-webfont.ttf") format("truetype"),
+    url("font/montserrat/montserrat-regular-webfont.svg#montserrat-regular-webfont") format("svg");
+}
+
+body {
+    font-family: 'Montserrat', 'Segoe UI', 'Roboto', 'Helvetica Neue', monospace;
+    color: #868e96
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Montserrat', 'Segoe UI', 'Roboto', 'Helvetica Neue', monospace;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #495256;
+}
+
+p {
+    color: #495256;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 4.5rem
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+h3 {
+    font-size: 1.5rem
+}
+
+
+@media (max-width: 767px) {
+    .pc {
+        display: none!important;
+    }
+    .mobile {
+        display: flex!important;
+    }
+    a {
+        text-transform: uppercase;
+    }
+
+    .menu a:active,
+    .menu a:focus,
+    .menu a:hover {
+        color: #1f4d79 !important;
+        text-decoration: none;
+    }
+
+    #up-button {
+        color: #f1faff !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .pc {
+        display: flex!important;
+    }
+    .mobile {
+        display: none!important;
+    }
+
+    a {
+        color: #f1faff !important;
+        text-transform: uppercase;
+    }
+
+    .menu a:active,
+    .menu a:focus,
+    .menu a:hover {
+        color: #2d6fa6 !important;
+        text-decoration: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    .card-height {
+        height: auto;
+    }
+}
+
+@media (min-width: 1201px) {
+    .card-height {
+        height: 94%;
+    }
+}
+
+.menu {
+    background-color: #1f4d79;
+}
+
+.card a {
+    color: #495256 !important;
+    text-decoration: none;
+}
+
+.avatar {
+    background-color: #ffffff;
+}
+
+p.card-text {
+    margin-bottom: 0.5rem;
+}
+
+#up-button {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #1f4d79;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+#up-button:hover {
+    background-color: #2d6fa6;
+}
+
+div.tabl p {
+    margin-bottom: 0.5rem;
+}
+
+.android-card a {
+    background-color: #1f4d79;
+    color: #f1faff !important;
+}
+
+.android-card a:active,
+.android-card a:focus,
+.android-card a:hover  {
+    background-color: #2d6fa6;
+}
