@@ -639,6 +639,13 @@
     let workPeriod = document.getElementById("work-period");
     workPeriod.innerHTML = dateDif(new Date(2021, 8, 1), new Date())
 
+    const navLinks = document.querySelectorAll('.nav-item')
+    const menuToggle = document.getElementById('navmenu')
+    const bsCollapse = new bootstrap.Collapse(menuToggle)
+    navLinks.forEach((l) => {
+        l.addEventListener('click', () => { bsCollapse.toggle() })
+    })
+
 </script>
 </body>
 </html>
