@@ -28,15 +28,6 @@ p {
     color: #3b4042;
 }
 
-h1 {
-    font-size: 4rem;
-    line-height: 4.5rem
-}
-
-h2 {
-    font-size: 2.5rem;
-}
-
 h3 {
     font-size: 1.5rem
 }
@@ -51,6 +42,20 @@ h3 {
     }
     a {
         text-transform: uppercase;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 2.5rem
+    }
+
+    .h2 {
+        font-size: 1rem;
+        line-height: 1rem
+    }
+
+    .links.h6 {
+        font-size: 0.8rem!important;
     }
 
     .menu a:active,
@@ -71,6 +76,15 @@ h3 {
     }
     .mobile {
         display: none!important;
+    }
+
+    h1 {
+        font-size: 4rem;
+        line-height: 4.5rem
+    }
+
+    h2 {
+        font-size: 2.5rem;
     }
 
     a {
