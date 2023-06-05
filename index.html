@@ -109,9 +109,21 @@
                     <h1 class="mb-0 text-uppercase">Stanislav <span class="text-primary">Danylenko</span>
                     </h1>
                     <div class="h2 mb-3">Senior Java Developer</div>
-                    <div class="h6 mb-5 links">
+                    <div class="h6 mb-5 links pc">
                         <em class="bi bi-calendar-check"></em> 17.05.1999 |
                         <em class="bi bi-geo-alt"></em> Ukraine |
+                        <a href="https://www.linkedin.com/in/stanislav-danylenko/"><em class="bi bi-linkedin"></em> |
+                        </a>
+                        <a href="mailto:name@email.com"><em class="bi bi-envelope"></em> | </a>
+                        <a href="https://github.com/StanislavDanylenko"><em class="bi bi-github"></em> | </a>
+                        <a href="https://play.google.com/store/apps/developer?id=Stanislav+Danylenko"><em
+                                class="bi bi-google-play"></em> </a>
+                    </div>
+                    <div class="h6 links mobile">
+                        <em class="bi bi-calendar-check"></em> 17.05.1999 |
+                        <em class="bi bi-geo-alt"></em> Ukraine
+                    </div>
+                    <div class="h6 mb-4 links mobile">
                         <a href="https://www.linkedin.com/in/stanislav-danylenko/"><em class="bi bi-linkedin"></em> |
                         </a>
                         <a href="mailto:name@email.com"><em class="bi bi-envelope"></em> | </a>
@@ -643,7 +655,7 @@
     const menuToggle = document.getElementById('navmenu')
     const bsCollapse = new bootstrap.Collapse(menuToggle)
     navLinks.forEach((l) => {
-        l.addEventListener('click', () => { bsCollapse.toggle() })
+        l.addEventListener('click', () => { bsCollapse.toggle();console.log("ifo") })
     })
 
 </script>
