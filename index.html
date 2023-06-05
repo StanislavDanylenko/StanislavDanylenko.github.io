@@ -612,7 +612,7 @@
                     </div>
                 </div>
             </div>
-
+            <p class="text-center p-3">© Stanislav Danylenko <span id="curr-year"></span></p>
         </div>
     </div>
 </div>
@@ -653,6 +653,9 @@
             console.log("asd")
         })
     })
+
+    let currYear = document.getElementById("curr-year");
+    currYear.innerHTML = `${new Date().getFullYear()}`;
 
 </script>
 </body>
