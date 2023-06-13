@@ -112,6 +112,30 @@ h3 {
     }
 }
 
+@media (max-height: 576px) and (orientation: landscape) {
+    .nav-full {
+        display: none !important;
+    }
+    .nav-simplified {
+        display: block !important;
+    }
+    .img-fluid {
+        max-width: 75% !important;
+    }
+}
+
+@media (min-height: 577px) and (orientation: landscape) {
+    .nav-full {
+        display: block !important;
+    }
+    .nav-simplified {
+        display: none !important;
+    }
+    .img-fluid {
+        max-width: 75% !important;
+    }
+}
+
 .menu {
     background-color: #1f4d79;
 }
