@@ -95,7 +95,7 @@ h3 {
     .menu a:active,
     .menu a:focus,
     .menu a:hover {
-        color: #2d6fa6 !important;
+        color: #78b7ea !important;
         text-decoration: none;
     }
 }
@@ -141,7 +141,7 @@ h3 {
 }
 
 .card a {
-    color: #495256 !important;
+    color: #2c6faf !important;
     text-decoration: none;
 }
 
