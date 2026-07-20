@@ -76,6 +76,31 @@
 
     <!-- MAIN CONTENT (Tasks 3–9) -->
     <main class="md:ml-64 min-h-screen p-4 pt-20 md:pt-4 space-y-4">
+        <!-- SUMMARY -->
+        <section id="section-summary" class="bg-slate-800 rounded-xl border border-slate-700 p-6">
+            <h1 class="text-4xl font-bold text-white tracking-tight">Stanislav <span class="text-indigo-400">Danylenko</span></h1>
+            <p class="text-lg text-slate-400 mt-1 mb-4">Senior Java Developer</p>
+
+            <div class="flex flex-wrap gap-3 text-sm text-slate-400 mb-6">
+                <span><i class="bi bi-calendar-check mr-1"></i>17.05.1999</span>
+                <span><i class="bi bi-geo-alt mr-1"></i>Ukraine</span>
+                <a href="https://www.linkedin.com/in/stanislav-danylenko/" class="text-slate-400 hover:text-indigo-400 transition-colors"><i class="bi bi-linkedin"></i></a>
+                <a href="mailto:stanislav.danylenko@gmail.com?subject=Job%20offer" class="text-slate-400 hover:text-indigo-400 transition-colors"><i class="bi bi-envelope"></i></a>
+                <a href="https://github.com/StanislavDanylenko" class="text-slate-400 hover:text-indigo-400 transition-colors"><i class="bi bi-github"></i></a>
+                <a href="https://play.google.com/store/apps/developer?id=Stanislav+Danylenko" class="text-slate-400 hover:text-indigo-400 transition-colors"><i class="bi bi-google-play"></i></a>
+            </div>
+
+            <p class="text-slate-300 leading-relaxed">I am ready to learn new technologies and improve my skills in software development and take part in writing interesting projects with up-to-date modern technologies and approaches in different domains. I love code with a high test coverage level, flexible hours and Agile.</p>
+
+            <div x-data="{ expanded: false }">
+                <button @click="expanded = !expanded" class="text-indigo-400 hover:text-indigo-300 text-sm mt-3 cursor-pointer" x-text="expanded ? '↑ свернуть ↑' : '↓ читать далее ↓'"></button>
+                <div x-show="expanded" x-transition class="mt-4 space-y-3 text-slate-300 leading-relaxed">
+                    <p>I am a senior software engineer and Java mentor with more than 7 years experience in developing enterprise applications. I like to learn new technologies and deepen my knowledge in those areas in which I am an expert.</p>
+                    <p>Worked on more than 5 small and large projects in different domains. In various teams from 3 to 200 people (in total) and with partners from all over the world, for example, Australia, USA, Israel, Italy, etc. Worked as a full-stack developer and as a backend developer. Various methodologies were used in the work: Scrum, Kanban. Worked with various databases, technology stacks.</p>
+                    <p>As a PhD student I am doing research in BigData image processing and reverse search.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- SCROLL TO TOP -->
