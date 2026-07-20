@@ -93,7 +93,7 @@
             <p class="text-slate-300 leading-relaxed">I am ready to learn new technologies and improve my skills in software development and take part in writing interesting projects with up-to-date modern technologies and approaches in different domains. I love code with a high test coverage level, flexible hours and Agile.</p>
 
             <div x-data="{ expanded: false }">
-                <button @click="expanded = !expanded" class="text-indigo-400 hover:text-indigo-300 text-sm mt-3 cursor-pointer" x-text="expanded ? '↑ свернуть ↑' : '↓ читать далее ↓'"></button>
+                <button @click="expanded = !expanded" class="text-indigo-400 hover:text-indigo-300 text-sm mt-3 cursor-pointer" x-text="expanded ? '↑ collapse ↑' : '↓ read more ↓'"></button>
                 <div x-show="expanded" x-transition class="mt-4 space-y-3 text-slate-300 leading-relaxed">
                     <p>I am a senior software engineer and Java mentor with more than 7 years experience in developing enterprise applications. I like to learn new technologies and deepen my knowledge in those areas in which I am an expert.</p>
                     <p>Worked on more than 5 small and large projects in different domains. In various teams from 3 to 200 people (in total) and with partners from all over the world, for example, Australia, USA, Israel, Italy, etc. Worked as a full-stack developer and as a backend developer. Various methodologies were used in the work: Scrum, Kanban. Worked with various databases, technology stacks.</p>
@@ -102,6 +102,8 @@
             </div>
         </section>
 
+        <!-- SKILLS (side-by-side on desktop) -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
         <!-- MAIN SKILLS -->
         <section id="section-main-skills" class="bg-slate-800 rounded-xl border border-slate-700 p-6">
             <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-4">Main Skills</h2>
@@ -141,6 +143,7 @@
                 <li class="py-2 text-slate-300 text-sm"><span class="font-semibold text-slate-200">Other:</span> Android, Arduino, C#</li>
             </ul>
         </section>
+        </div>
 
         <!-- EDUCATION + LANGUAGES -->
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -417,17 +420,17 @@
             <li class="py-3 text-sm text-slate-300">
                 <p class="font-semibold text-slate-200 mb-3">Articles author:</p>
                 <ul class="space-y-2">
-                    <li><a target="_blank" href="https://doi.org/10.23939/sisn2025.18.2.030" class="text-indigo-400 hover:text-indigo-300 transition-colors">Numerical Optimization Method for Clustering in Content-Based Image Retrieval Systems</a></li>
-                    <li><a target="_blank" href="https://doi.org/10.30837/2522-9818.2025.4.018" class="text-indigo-400 hover:text-indigo-300 transition-colors">Content-based image retrieval method in a multidimensional data model at big data scale</a></li>
-                    <li><a target="_blank" href="https://doi.org/10.31891/csit-2025-3-15" class="text-indigo-400 hover:text-indigo-300 transition-colors">META-MODEL FOR LOW-CODE CONFIGURATION AND DEPLOYMENT OF CONTENT-BASED IMAGE RETRIEVAL SYSTEMS</a></li>
-                    <li><a target="_blank" href="https://doi.org/10.36910/6775-2524-0560-2025-60-13" class="text-indigo-400 hover:text-indigo-300 transition-colors">Formalized method for RAM optimization in content-based image retrieval systems</a></li>
-                    <li><a target="_blank" href="https://ceur-ws.org/Vol-4005/paper12.pdf" class="text-indigo-400 hover:text-indigo-300 transition-colors">Parametric configuration approach of a multidimensional content-based image retrieval model</a></li>
-                    <li><a target="_blank" href="https://doi.org/10.32620/reks.2025.3.10" class="text-indigo-400 hover:text-indigo-300 transition-colors">Method for optimizing descriptors clustering in the feature database of a content-based image retrieval system</a></li>
-                    <li><a target="_blank" href="https://doi.org/10.32620/reks.2025.1.10" class="text-indigo-400 hover:text-indigo-300 transition-colors">Development of a multidimensional data model for efficient content-based image retrieval in big data storage</a></li>
-                    <li><a target="_blank" href="https://tech-stack.com/blog/using-graalvm-in-a-real-world-scenario-techstacks-experience/" class="text-indigo-400 hover:text-indigo-300 transition-colors">GraalVM experience</a></li>
-                    <li><a target="_blank" href="http://ceur-ws.org/Vol-3171/paper111.pdf" class="text-indigo-400 hover:text-indigo-300 transition-colors">Research of Digital-Analog Conversion Method for Reproduction of Mechanical Oscillations</a></li>
-                    <li><a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10238632" class="text-indigo-400 hover:text-indigo-300 transition-colors">Methods of Digital-To-Analog Conversion for Reproduction of Sound Waves</a></li>
-                    <li><a target="_blank" href="http://www.ithea.org/softengine/2022_SE_Proceedings.pdf#page=92" class="text-indigo-400 hover:text-indigo-300 transition-colors">REPRODUCING SOUND WAVES WITH AN ALTERNATIVE DIGITAL-TO-ANALOGUE CONVERTER AND EMITTERS</a></li>
+                    <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></span><a target="_blank" href="https://doi.org/10.23939/sisn2025.18.2.030" class="text-indigo-400 hover:text-indigo-300 transition-colors">Numerical Optimization Method for Clustering in Content-Based Image Retrieval Systems</a></li>
+                    <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></span><a target="_blank" href="https://doi.org/10.30837/2522-9818.2025.4.018" class="text-indigo-400 hover:text-indigo-300 transition-colors">Content-based image retrieval method in a multidimensional data model at big data scale</a></li>
+                    <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></span><a target="_blank" href="https://doi.org/10.31891/csit-2025-3-15" class="text-indigo-400 hover:text-indigo-300 transition-colors">META-MODEL FOR LOW-CODE CONFIGURATION AND DEPLOYMENT OF CONTENT-BASED IMAGE RETRIEVAL SYSTEMS</a></li>
+                    <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></span><a target="_blank" href="https://doi.org/10.36910/6775-2524-0560-2025-60-13" class="text-indigo-400 hover:text-indigo-300 transition-colors">Formalized method for RAM optimization in content-based image retrieval systems</a></li>
+                    <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></span><a target="_blank" href="https://ceur-ws.org/Vol-4005/paper12.pdf" class="text-indigo-400 hover:text-indigo-300 transition-colors">Parametric configuration approach of a multidimensional content-based image retrieval model</a></li>
+                    <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></span><a target="_blank" href="https://doi.org/10.32620/reks.2025.3.10" class="text-indigo-400 hover:text-indigo-300 transition-colors">Method for optimizing descriptors clustering in the feature database of a content-based image retrieval system</a></li>
+                    <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></span><a target="_blank" href="https://doi.org/10.32620/reks.2025.1.10" class="text-indigo-400 hover:text-indigo-300 transition-colors">Development of a multidimensional data model for efficient content-based image retrieval in big data storage</a></li>
+                    <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></span><a target="_blank" href="https://tech-stack.com/blog/using-graalvm-in-a-real-world-scenario-techstacks-experience/" class="text-indigo-400 hover:text-indigo-300 transition-colors">GraalVM experience</a></li>
+                    <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></span><a target="_blank" href="http://ceur-ws.org/Vol-3171/paper111.pdf" class="text-indigo-400 hover:text-indigo-300 transition-colors">Research of Digital-Analog Conversion Method for Reproduction of Mechanical Oscillations</a></li>
+                    <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></span><a target="_blank" href="https://ieeexplore.ieee.org/abstract/document/10238632" class="text-indigo-400 hover:text-indigo-300 transition-colors">Methods of Digital-To-Analog Conversion for Reproduction of Sound Waves</a></li>
+                    <li class="flex items-start gap-2"><span class="mt-1.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0"></span><a target="_blank" href="http://www.ithea.org/softengine/2022_SE_Proceedings.pdf#page=92" class="text-indigo-400 hover:text-indigo-300 transition-colors">REPRODUCING SOUND WAVES WITH AN ALTERNATIVE DIGITAL-TO-ANALOGUE CONVERTER AND EMITTERS</a></li>
                 </ul>
             </li>
         </ul>
