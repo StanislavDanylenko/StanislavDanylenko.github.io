@@ -489,7 +489,17 @@
     <i class="bi bi-arrow-up-short text-xl"></i>
 </button>
 
-    <!-- SCRIPTS (Task 9) -->
+    <script>
+        function dateDif(d1, d2) {
+            let months = (d2.getFullYear() - d1.getFullYear()) * 12;
+            months -= d1.getMonth();
+            months += d2.getMonth();
+            const years = Math.floor(months / 12);
+            months = months - years * 12;
+            return years === 0 ? `${months} months` : `${years} years ${months} months`;
+        }
+        document.getElementById('work-period').textContent = dateDif(new Date(2023, 8, 1), new Date());
+    </script>
 
 </body>
 </html>
