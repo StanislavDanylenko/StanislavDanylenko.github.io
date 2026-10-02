@@ -79,7 +79,7 @@
         <!-- SUMMARY -->
         <section id="section-summary" class="bg-white rounded-xl border border-slate-200 p-6">
             <h1 class="text-4xl font-bold text-slate-900 tracking-tight">Stanislav <span class="text-indigo-600">Danylenko</span></h1>
-            <p class="text-lg text-slate-500 mt-1 mb-4">Senior Java Developer</p>
+            <p class="text-lg text-slate-500 mt-1 mb-4">Senior Java Full-Stack Developer, PhD in Software Engineering</p>
 
             <div class="flex flex-wrap gap-3 text-sm text-slate-500 mb-6">
                 <span><i class="bi bi-calendar-check mr-1"></i>17.05.1999</span>
@@ -96,7 +96,7 @@
                 <button @click="expanded = !expanded" class="text-indigo-600 hover:text-indigo-500 text-sm mt-3 cursor-pointer" x-text="expanded ? '↑ collapse ↑' : '↓ read more ↓'"></button>
                 <div x-show="expanded" x-transition class="mt-4 space-y-3 text-slate-700 leading-relaxed">
                     <p>I am a senior software engineer and Java mentor with more than 8 years experience in developing enterprise applications. I like to learn new technologies and deepen my knowledge in those areas in which I am an expert.</p>
-                    <p>Worked on more than 5 small and large projects in different domains. In various teams from 3 to 200 people (in total) and with partners from all over the world, for example, Australia, USA, Israel, Italy, etc. Worked as a full-stack developer and as a backend developer. Various methodologies were used in the work: Scrum, Kanban. Worked with various databases, technology stacks.</p>
+                    <p>Worked on more than 5 small and large projects in different domains. In various teams from 3 to 300 people (in total) and with partners from all over the world, for example, Australia, USA, Israel, Italy, etc. Worked as a full-stack developer and as a backend developer. Various methodologies were used in the work: Scrum, Kanban. Worked with various databases, technology stacks.</p>
                     <p>As a PhD student I am doing research in BigData image processing and CBIR.</p>
                 </div>
             </div>
@@ -110,18 +110,22 @@
             <ul class="divide-y divide-slate-200">
                 <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Java:</span> 8, 11, 17, 21, 25</li>
                 <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Build Tools:</span> Maven, Gradle</li>
-                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">DB:</span> MySQL, PostgreSQL, MS SQL</li>
-                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Java-DB:</span> JDBC, Hibernate, Flyway</li>
-                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Testing:</span> JUnit 4, 5, Mockito, Powermock, Testcontainers</li>
-                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Testing levels:</span> unit, integration, contract</li>
-                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Spring:</span> Boot, Web, Data, JPA, Security, Cloud</li>
-                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">AWS:</span> SNS, SQS, S3, Elastic Transcoder</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Spring:</span> Boot, Web, Data, JPA, Security (including OAuth2, OpenID Connect), Cloud, Actuator, Batch</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Cloud:</span> AWS (SNS, SQS, S3, Elastic Transcoder), GCP (GKE, Secret Manager)</li>
                 <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Containers:</span> Docker, K8S</li>
-                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Git:</span> GitHub, GitLab, BitBucket</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Messaging:</span> RabbitMQ, Kafka (with Avro and Schema Registry), SNS/SQS</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Communication:</span> REST API + OpenAPI, has experience with: gRPC, GraphQL</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Monitoring:</span> ELK, Prometheus, Grafana, Alert Manager | using and configuring</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">DB/Cache:</span> MySQL, PostgreSQL, MS SQL, Redis</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Java<->DB:</span> JDBC, Hibernate, Flyway</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Testing:</span> JUnit 4/5, Mockito, Testcontainers, MockServer, ArchUnit</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Testing levels:</span> unit, integration, contract</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Quality:</span> Sonar, Semgrep, Sentry</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Git:</span> GitHub, GitLab, BitBucket | Configuring pipelines: GitLab CI, GitHub Actions</li>
                 <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Methodology:</span> Scrum, Kanban</li>
                 <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">OS:</span> Linux, Windows, Mac OS</li>
                 <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Architectures:</span> monolith, micro services</li>
-                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Other:</span> Jira, IntelliJ IDEA, Swagger</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Tools:</span> Resilience4j (circuit breaker, retry, rate limiter), ShedLock, Cloudflare, Terraform</li>
             </ul>
         </section>
 
@@ -137,8 +141,8 @@
             </ul>
             <p class="text-sm font-semibold text-slate-700 mb-2">Have experience with</p>
             <ul class="divide-y divide-slate-200">
-                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Front-end:</span> JavaScript, TypeScript, jQuery, React, Redux, Angular, Node.js, Dojo Toolkit, Handlebars, Bootstrap 4, AlloyUI</li>
-                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Java:</span> JSP, FreeMarker, Liferay, OSGI, PortletAPI, GraalVM</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Front-end:</span> JavaScript, TypeScript, jQuery, React, Redux, Angular, Node.js, Dojo Toolkit, Handlebars, Bootstrap 4/5 , AlloyUI</li>
+                <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Java:</span> JSP, FreeMarker, Liferay, OSGI, PortletAPI, GraalVM, Brightspot CMS</li>
                 <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Auto-testing:</span> Selenium, Selenide</li>
                 <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Other:</span> Android, Arduino, C#</li>
             </ul>
@@ -156,16 +160,16 @@
                 <ul class="divide-y divide-slate-200">
                     <li class="py-2 text-slate-700 text-sm">Bachelor · (2016–2020)</li>
                     <li class="py-2 text-slate-700 text-sm">Master · (2020–2022)</li>
-                    <li class="py-2 text-slate-700 text-sm">PhD · (2022–now)</li>
+                    <li class="py-2 text-slate-700 text-sm">PhD · (2022–2026)</li>
                 </ul>
             </section>
 
             <section id="section-languages" class="bg-white rounded-xl border border-slate-200 p-6">
                 <h2 class="text-xs font-semibold uppercase tracking-widest text-slate-500 mb-4">Languages</h2>
                 <ul class="divide-y divide-slate-200">
-                    <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">English</span> — Upper-Intermediate</li>
-                    <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Ukrainian</span> — Native</li>
-                    <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Russian</span> — Native</li>
+                    <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">English</span> · Upper-Intermediate</li>
+                    <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Ukrainian</span> · Native</li>
+                    <li class="py-2 text-slate-700 text-sm"><span class="font-semibold text-slate-900">Russian</span> · Native</li>
                 </ul>
             </section>
         </div>
@@ -191,22 +195,36 @@
                 <ul class="text-sm space-y-1 text-slate-700">
                     <li><span class="font-semibold text-slate-900">Company:</span> SPD Technology</li>
                     <li><span class="font-semibold text-slate-900">Start:</span> Sep 2023</li>
-                    <li><span class="font-semibold text-slate-900">Role:</span> Senior FullStack Developer</li>
-                    <li><span class="font-semibold text-slate-900">Team Size:</span> 9 (total 200+)</li>
+                    <li><span class="font-semibold text-slate-900">Role:</span> Senior Full-Stack Developer</li>
+                    <li><span class="font-semibold text-slate-900">Team Size:</span> 9-15 (total 300+)</li>
                     <li><span class="font-semibold text-slate-900">Domain:</span> fintech: financial data provider, investments, global capital markets</li>
                 </ul>
                 <div class="md:col-span-2 text-sm space-y-2 text-slate-700">
                     <p><span class="font-semibold text-slate-900">Description:</span> Large microservices system for providing financial and investments info, companies analysis and ranking</p>
-                    <p><span class="font-semibold text-slate-900">Technologies:</span> Java 8, 11, 17, MS SQL Server, PostgreSQL, Flyway, Redis, Maven, Gradle, Spring MVC, Spring (Boot, Web, Cloud, Actuator), Confluent Kafka and Schema registry, AWS (SNS, SQS), GCP (Secret Manager, Artifact Manager), JUnit 4, 5, Mockito, Sonar, GitLab CI, Freemarker, ELK stack, k8s</p>
+                    <p><span class="font-semibold text-slate-900">Technologies:</span> Java (8, 11, 17, 21, 25), MS SQL Server, PostgreSQL, Flyway, Redis, Maven, Gradle, Spring (Boot, Web, Data, Security, Cloud, Actuator, Batch), Resilience4j, Confluent Kafka with Avro Schema Registry, gRPC, AWS (SNS, SQS, S3), GCP (GKE, Secret Manager, Artifact Registry), JUnit 4/5, Mockito, Testcontainers, ArchUnit, Micrometer, Sentry, Sonar, Semgrep, GitLab CI, Freemarker, Handlebars, Brightspot CMS, ELK, Prometheus, Grafana, Docker, K8s, ShedLock, React + TS, vanilla JS, jQuery, less</p>
                     <div>
                         <p class="font-semibold text-slate-900 mb-1">Responsibilities:</p>
                         <ul class="list-disc list-inside space-y-1 text-slate-500">
-                            <li>implement SEO optimizations</li>
+                            <li>technical analysis and decomposition of business initiatives</li>
+                            <li>solution architecture design and implementation planning, collaborating with architect and security team</li>
+                            <li>conducted cross-team technical syncs, initiated and tracked technical improvement tasks</li>
+                            <li>defined Kafka schema contracts and OpenAPI specifications as cross-team communication standards</li>
+                            <li>communication between international teams across different time zones</li>
+                            <li>integration with services via REST API, gRPC, and GraphQL</li>
+                            <li>performance optimization: reduced cron job query execution time from 10+ minutes to under 1 minute, optimized memory usage via projections and hot-data caching, split and removed JS bundles to improve page load speed</li>
+                            <li>added monitoring metrics and alerts to problematic areas of the product</li>
+                            <li>legacy code maintenance and cleanup, migration of legacy UI (jQuery, Knockout.js) to React</li>
+                            <li>migration of resources between K8s clusters</li>
+                            <li>implement SEO optimizations and analytics integrations (GTM, GA, Marketo)</li>
                             <li>fix security vulnerabilities</li>
-                            <li>maintenance of Freemarker markup</li>
-                            <li>upgrade versions of the libs, Java, Spring</li>
+                            <li>maintenance of Freemarker and Handlebars markup</li>
+                            <li>upgrade versions of libs, Java, Spring</li>
                             <li>migrate Kafka to use Avro with Schema Registry</li>
-                            <li>feature code design</li>
+                            <li>implement service resilience patterns (Resilience4j: circuit breaker, retry, rate limiter)</li>
+                            <li>pixel-perfect responsive UI implementation from design mockups</li>
+                            <li>mentoring developers, conducting technical interviews and preparing interview questions</li>
+                            <li>duty monitoring and incident resolution</li>
+                            <li>AI-adaptation of developer workflow (Claude Code: CLAUDE.md, hooks, skills)</li>
                         </ul>
                     </div>
                 </div>
